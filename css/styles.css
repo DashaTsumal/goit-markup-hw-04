@@ -381,6 +381,7 @@ p {
 .img-overlay {
     position: relative;
     overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay {
@@ -407,6 +408,7 @@ p {
     column-gap: 24px;
     row-gap: 48px;
     justify-content: center;
+    align-items: center;
 }
 
 .portfolio-list-item {
@@ -414,16 +416,17 @@ p {
     max-width: 360px;
     max-height: 420px;
     width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    transform: translateY(0%);
+    transform: translateY(0);
 }
 
 .portfolio-list-item:hover .overlay {
-    transform: translateY(0%);
+    transform: translateY(0);
 }
 
 .container-portfolio {
