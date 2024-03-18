@@ -462,9 +462,13 @@ p {
 .container-footer {
     display: flex;
     align-items: baseline;
+    margin-right: 120px;
 }
 
-
+.footer-container{
+    display: flex;
+    align-items: baseline;
+}
 
 footer.link-logo {
     display: flex;
